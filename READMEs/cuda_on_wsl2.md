@@ -39,14 +39,14 @@ Assuming using Windows 11, Windows Terminal will be available by default and sho
 Official instructions available at [**Install Docker Engine on Ubuntu**](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository). Alternatively, just run `curl https://get.docker.com | sh`.
 
 1. Start a WSL2 windows (Windows Terminal > New Tab dropdown > Ubuntu-20.04).
-2. Update sources and (optionally) update all packages
+2. Update sources and (optionally) update all packages.
 
     ```console
     user@host:~$ sudo apt-get update
     user@host:~$ sudo apt-get dist-upgrade    # optional
     ```
 
-3. Setup Docker repository and install Docker
+3. Setup Docker repository and install Docker.
 
     ```console
     user@host:~$ sudo apt-get install ca-certificates curl gnupg lsb-release
@@ -56,8 +56,48 @@ Official instructions available at [**Install Docker Engine on Ubuntu**](https:/
     user@host:~$ sudo apt-get install docker-ce docker-ce-cli containerd.io
     ```
 
-4. Follow [**Post-installation steps for Linux**](https://docs.docker.com/engine/install/linux-postinstall/) to run `docker` without `sudo`
+4. Follow [**Post-installation steps for Linux**](https://docs.docker.com/engine/install/linux-postinstall/) to run `docker` without `sudo`.
 
     ```console
     user@host:~$ sudo groupadd docker       # probably will say group `docker` already exists...
+    user@host:~$ sudo usermod -aG docker $USER
     ```
+
+    At this point, kill WSL2 by running `wsl --shutdown` in PowerShell, and reopen WSL windows (effectively "restart"?).
+
+    ```console
+    user@host:~$ newgrp docker
+    user@host:~$ docker run --rm hello-world
+
+    Hello from Docker!
+    This message shows that your installation appears to be working correctly.
+    [...]
+    ```
+
+    You should see the `hello-world` image output as above. If it complains about something something `socket`, complete step 5, then retry this step.
+
+5. Make sure `docker` service is always running when using WSL.
+
+    ```console
+    user@host:~$ sudo vim /etc/wsl.conf     # or a text editor of your choice
+
+    # in Vim
+    [boot]
+    command = service docker start
+    ~
+    ~
+    ~
+    [...]
+
+    # save file, double check
+    user@host:~$ cat /etc/wsl.conf
+    [boot]
+    command = service docker start
+    ```
+
+    kill WSL2 by running `wsl --shutdown` and open up another one.
+
+### Installing NVIDIA Container Toolkit (nvidia-docker2)
+
+Official instructions available at [**Install NVIDIA Container Toolkit**](https://docs.nvidia.com/cuda/wsl-user-guide/index.html#ch04-sub02-install-nvidia-docker).
+
