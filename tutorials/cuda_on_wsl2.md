@@ -240,3 +240,9 @@ In my case, I tested my setup by running Gazebo, a simulation software commonly 
     ```
 
     Your `OpenGL renderer string` should say NVIDIA GPU like it did on mine.
+
+## Relevant Sources
+
+- [microsoft/wslg Issue #554](https://github.com/microsoft/wslg/issues/554)
+- [microsoft/WSL Issue #7507](https://github.com/microsoft/WSL/issues/7507)
+- [NVIDIA/nvidia-docker Issue #1554](https://github.com/NVIDIA/nvidia-docker/issues/1554)
