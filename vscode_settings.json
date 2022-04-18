@@ -1,0 +1,28 @@
+{
+    // Interface Settings
+    "workbench.colorTheme": "Dracula",
+    "workbench.startupEditor": "none",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    // Editor Settings
+    "editor.fontFamily": "FiraCode NF",
+    "editor.fontSize": 12,
+    "editor.fontLigatures": true,
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorStyle": "line",
+    "editor.smoothScrolling": true,
+    // "editor.renderFinalNewline": true,
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+
+    // Terminal Settings
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+}
