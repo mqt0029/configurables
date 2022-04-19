@@ -67,15 +67,8 @@
                 "name": "Ubuntu-20.04",
                 "source": "Windows.Terminal.Wsl",
                 "startingDirectory": "\\\\wsl.localhost\\Ubuntu-20.04\\home\\username-wsl\\WSL-Workspace"
-            },
-            {
-                "guid": "{7222b16c-89eb-408d-9480-555ce3ee7547}",
-                "hidden": false,
-                "name": "Git Bash",
-                "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
-                "commandline": "%PROGRAMFILES%/Git/usr/bin/bash.exe -i -l",
-                "startingDirectory": "C:\\Users\\username\\Desktop\\Workspace"
             }
+            // Git Bash will be added once default settings are loaded. Not sure why it's not automatic...
         ]
     },
 
