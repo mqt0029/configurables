@@ -1,0 +1,7 @@
+[user]
+	name = Minh Tram
+	email = minh.tram@mavs.uta.edu
+[core]
+	editor = code
+[init]
+	defaultBranch = main
