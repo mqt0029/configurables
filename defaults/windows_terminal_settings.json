@@ -35,7 +35,15 @@
     "profiles": 
     {
         "defaults": {
-            "colorScheme": "Dracula"
+            "colorScheme": "Dracula",
+            "acrylicOpacity": 0.85,
+            "useAcrylic": true,
+            "closeOnExit": "always",
+            "fontFace": "CaskaydiaCove NF",
+            "fontSize": 12,
+            "cursorShape": "bar",
+            "padding": "0",
+            "snapOnInput": true
         },
         "list": 
         [
@@ -71,7 +79,8 @@
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
-                "source": "Git"
+                "source": "Git",
+                "startingDirectory": "C:\\Users\\mqt00xx\\Desktop\\Workspace"
             }
         ]
     },
