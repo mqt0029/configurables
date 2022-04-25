@@ -1,0 +1,66 @@
+# /home/mqt00xx/.config/tmuxinator/docker_ros.yml
+
+name: docker_ros
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
+
+# Project hooks
+
+# Runs on project start, always
+# on_project_start: command
+
+# Run on project start, the first time
+# on_project_first_start: command
+
+# Run on project start, after the first time
+# on_project_restart: command
+
+# Run on project exit ( detaching from tmux session )
+# on_project_exit: command
+
+# Run on project stop
+# on_project_stop: command
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: editor
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+windows:
+  - docker_internal:
+      layout: c1eb,120x44,0,0{60x44,0,0[60x22,0,0,0,60x21,0,23,5],59x44,61,0[59x11,61,0,1,59x10,61,12,4,59x10,61,23,2,59x10,61,34,3]}
+      panes:
+        - path/to/command
+        - path/to/command
+        - path/to/command
+        - path/to/command
+        - path/to/command
+        - path/to/command
+
+# ---------------------------------------------------------------------------- #
+#                             "empty" command start                            #
+# ---------------------------------------------------------------------------- #
+        # - source ~/.zshrc && clear
+        # - source ~/.zshrc && clear
+        # - source ~/.zshrc && clear
+        # - source ~/.zshrc && clear
+        # - source ~/.zshrc && clear
+        # - source ~/.zshrc && clear
