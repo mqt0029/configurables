@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions":
+    "actions": 
     [
         {
-            "command":
+            "command": 
             {
                 "action": "copy",
                 "singleLine": false
@@ -20,7 +20,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -31,24 +31,13 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-    "profiles":
+    "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+    "profiles": 
     {
-        "defaults":
-        {
-            "closeOnExit": "always",
-            "colorScheme": "Dracula",
-            "font":
-            {
-                "face": "CaskaydiaCove NF",
-                "size": 12
-            },
-            "opacity": 80,
-            "padding": "0",
-            "snapOnInput": true,
-            "useAcrylic": true
+        "defaults": {
+            "colorScheme": "Dracula"
         },
-        "list":
+        "list": 
         [
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -67,28 +56,13 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl.localhost\\Ubuntu-20.04\\home\\jmtus-wsl\\WSL-Workspace"
-            },
-            {
-                "commandline": "%PROGRAMFILES%/Git/usr/bin/bash.exe -i -l",
-                "guid": "{7222b16c-89eb-408d-9480-555ce3ee7547}",
-                "hidden": false,
-                "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
-                "name": "Git Bash",
-                "startingDirectory": "C:\\Users\\jmtus\\Desktop\\Workspace"
-            },
-            {
-                "guid": "{7efa6bfd-a701-562d-b4b1-b49f498d9bef}",
+                "guid": "{7629aaa5-b7f2-5a2e-83d8-8deec818169b}",
                 "hidden": false,
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{ea199c50-ad58-52db-9a17-22d65d1f4dc8}",
+                "guid": "{89f828ba-68a2-582c-9c8f-79dc921953f3}",
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
@@ -101,7 +75,7 @@
             }
         ]
     },
-    "schemes":
+    "schemes": 
     [
         {
             "background": "#0C0C0C",
@@ -148,29 +122,6 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
-        },
-        {
-            "background": "#1E1F29",
-            "black": "#000000",
-            "blue": "#BD93F9",
-            "brightBlack": "#555555",
-            "brightBlue": "#BD93F9",
-            "brightCyan": "#8BE9FD",
-            "brightGreen": "#50FA7B",
-            "brightPurple": "#FF79C6",
-            "brightRed": "#FF5555",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#F1FA8C",
-            "cursorColor": "#BBBBBB",
-            "cyan": "#8BE9FD",
-            "foreground": "#F8F8F2",
-            "green": "#50FA7B",
-            "name": "Dracula",
-            "purple": "#FF79C6",
-            "red": "#FF5555",
-            "selectionBackground": "#44475A",
-            "white": "#BBBBBB",
-            "yellow": "#F1FA8C"
         },
         {
             "background": "#282C34",
@@ -332,6 +283,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        },
+        {
+            "name": "Dracula",
+            "black": "#000000",
+            "red": "#ff5555",
+            "green": "#50fa7b",
+            "yellow": "#f1fa8c",
+            "blue": "#bd93f9",
+            "purple": "#ff79c6",
+            "cyan": "#8be9fd",
+            "white": "#bbbbbb",
+            "brightBlack": "#555555",
+            "brightRed": "#ff5555",
+            "brightGreen": "#50fa7b",
+            "brightYellow": "#f1fa8c",
+            "brightBlue": "#bd93f9",
+            "brightPurple": "#ff79c6",
+            "brightCyan": "#8be9fd",
+            "brightWhite": "#ffffff",
+            "background": "#1e1f29",
+            "foreground": "#f8f8f2",
+            "selectionBackground": "#44475a",
+            "cursorColor": "#bbbbbb"
         }
     ]
 }
